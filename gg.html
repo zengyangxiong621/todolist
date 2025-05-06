@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+  position: relative;
+  overflow-x: auto; /* 允许水平滚动 */
+      height: 100px;
+   width: 300px;
+  display: flex;
+  gap: 20px;
+}
+
+.container::before,
+.container::after {
+  content: '';
+  position: absolute; /* 粘性定位 */
+  display: block;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 1;
+  backdrop-filter: blur(1px); /* 毛玻璃模糊 */
+  -webkit-backdrop-filter: blur(1px); /* Safari兼容 */
+}
+
+.container::before {
+  left: 0;
+  background: linear-gradient(
+    to right, 
+    rgba(255,255,255,1), 
+    rgba(255,255,255,0)
+  );
+}
+
+.container::after {
+  right: 0;
+  background: linear-gradient(
+    to left, 
+    rgba(255,255,255,1), 
+    rgba(255,255,255,0)
+  );
+}
+  </style>
+</head>
+<body>
+  <div>
+    <div class="container">
+      <div style="background: red; width: 50px; height: 100%"></div>
+      <div style="background: red; width: 50px; height: 100%"></div>
+      <div style="background: red; width: 50px; height: 100%"></div>
+      <div style="background: red; width: 50px; height: 100%"></div>
+      <div style="background: red; width: 50px; height: 100%"></div>
+      <div style="background: red; width: 50px; height: 100%"></div>
+    </div>
+  </div>
+  <div>
+    <span>123</span>
+    <span>456</span>
+  </div>
+  <div style="display: flex; width: 100px;">
+    <p>我是一个兵，红红火火恍恍惚惚，</p>
+    <p>大萨达实打实大师</p>
+  </div>
+</body>
+</html>

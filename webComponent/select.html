@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .select-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .select-wrapper::before {
+      content: 'quantity:';
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    select.select-variant-select {
+      width: 200px;
+      height: 40px;
+      border-color: #DDDDDD;
+      text-indent: 80px; /* 调整文字缩进，为前缀留出空间 */
+      appearance: none;
+      background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.41 0.590088L6 5.17009L10.59 0.590088L12 2.00009L6 8.00009L0 2.00009L1.41 0.590088Z' fill='%23999999'/%3e%3c/svg%3e") no-repeat;
+      background-position: calc(100% - 20px) center;
+      padding-right: 40px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <quantity-selector>
+    <button>-</button>
+    <input type="number" value="1" min="1" max="10">
+    <button>+</button>
+  </quantity-selector>
+  <!-- 这是一个 select组件 -->
+  <quantity-select-selector>
+    <div class="select-wrapper">
+      <select class="select-variant-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+    </div>  
+  </quantity-select-selector>
+  <script>
+    var CustomHTMLElement = class extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      // Add event listener helper method
+      on(eventName, selector, callback) {
+        this.addEventListener(eventName, (e) => {
+          if (e.target.matches(selector)) {
+            callback(e);
+          }
+        });
+      }
+
+      disconnectedCallback() {
+      }
+    };
+
+    var QuantitySelector = class extends CustomHTMLElement {
+      getCurrentNum() {
+        return this.inputElement.value;
+      }
+      
+      connectedCallback() {
+        this.inputElement = this.querySelector("input");
+        this.on("click", "button:first-child", () => {
+          const currentValue = parseInt(this.inputElement.value) || 0;
+          this.inputElement.value = Math.max(parseInt(this.inputElement.min), currentValue - 1);
+        });
+
+        this.on("click", "button:last-child", () => {
+          const currentValue = parseInt(this.inputElement.value) || 0;
+          this.inputElement.value = Math.min(parseInt(this.inputElement.max), currentValue + 1);
+        });
+      }
+    };
+    var QuantitySelectSelector = class extends CustomHTMLElement {
+      getCurrentNum() {
+        return this.selectElement.value;
+      }
+      
+      connectedCallback() {
+        this.selectElement = this.querySelector("select");
+        
+        // 监听 select 的 change 事件
+        this.selectElement.addEventListener('change', (e) => {
+          // 可以在这里添加值变化时的其他逻辑
+          console.log('当前选择的值：', this.getCurrentNum());
+        });
+      }
+    };
+
+    // 注册两个组件
+    window.customElements.define("quantity-selector", QuantitySelector);
+    window.customElements.define("quantity-select-selector", QuantitySelectSelector);
+</script>
+</body>
+
+</html>

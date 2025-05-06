@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Web Component</title>
+</head>
+
+<body>
+  <template id="modal-template">
+    <style>
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .modal-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        position: relative;
+        width: 80%;
+        max-width: 80%;
+        max-height: 90vh;
+      }
+
+      .modal-content {
+        margin-bottom: 15px;
+      }
+
+      /* 添加图片样式 */
+      ::slotted(div) {
+        width: 100%;
+      }
+
+      ::slotted(img) {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .modal-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 40px;
+      }
+
+      .modal-header {
+        margin-bottom: 15px;
+      }
+
+      .modal-content {
+        margin-bottom: 15px;
+      }
+
+
+      /* 修改这里，使用属性选择器 */
+      :host([showBg="false"]) .modal-container {
+        background: unset;
+      }
+
+      :host([showHeader="false"]) .modal-header {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .modal-container {
+          width: 95%;
+          margin: 10px;
+          padding: 15px;
+        }
+      }
+    </style>
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <span class="modal-close">&times;</span>
+        <div class="modal-header">
+          <slot name="header">Modal Header</slot>
+        </div>
+        <div class="modal-content">
+          <slot>Modal Content</slot>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    class ModalComponent extends HTMLElement {
+      constructor() {
+        super();
+        this.attachShadow({ mode: 'open' });
+        const template = document.getElementById('modal-template');
+        this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+        this.overlay = this.shadowRoot.querySelector('.modal-overlay');
+        this.closeBtn = this.shadowRoot.querySelector('.modal-close');
+
+        this.closeBtn.addEventListener('click', () => this.hide());
+        this.overlay.addEventListener('click', (e) => {
+          if (e.target === this.overlay) {
+            this.hide();
+          }
+        });
+
+        // 获取 modal ID
+        this.modalId = this.getAttribute('id');
+        if (!this.modalId) {
+            console.warn('Modal component should have an ID attribute');
+        }
+      }
+
+      // 添加静态方法用于打开指定 ID 的 modal
+      static open(modalId) {
+          const modal = document.getElementById(modalId);
+          if (modal) {
+              modal.show();
+          } else {
+              console.warn(`Modal with id "${modalId}" not found`);
+          }
+      }
+
+      show() {
+        this.overlay.style.display = 'flex';
+      }
+
+      hide() {
+        this.overlay.style.display = 'none';
+      }
+    }
+
+    customElements.define('custom-modal', ModalComponent);
+  </script>
+
+<style>
+
+</style>
+
+<custom-modal id="register-modal" showHeader="false" showBg="false">
+  <div>
+    <img style="max-width: 100%;" src="https://appstore.stg.shoplazza.com/_next/image/?url=https%3A%2F%2Fimg.staticdj.com%2Ff3f2c43a6e5b26f65002114db617e393.jpeg&w=3840&q=75" alt="">
+  </div>
+</custom-modal>
+
+<button onclick="ModalComponent.open('login-modal')">打开登录</button>
+<button onclick="ModalComponent.open('register-modal')">打开注册</button>
+</body>
+
+</html>
