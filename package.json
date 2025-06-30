@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@datastructures-js/priority-queue": "^6.3.3",
+    "axios": "^1.9.0",
+    "bloom-filters": "^3.0.4",
+    "cheerio": "^1.0.0",
+    "robots-parser": "^3.0.1"
+  }
+}

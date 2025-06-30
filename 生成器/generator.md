@@ -9,14 +9,14 @@
 
 ```javaScript
 // 生成器函数声明
-function* generatorFuntion() {
+function* generatorFunction() {
   yield 1;
   yield 2;
   yield 3;
 }
 
 // 使用生成器
-const generator = generatorFuntion();
+const generator = generatorFunction();
 console.log(generator.next()); // { value: 1, done: false }
 console.log(generator.next()); // { value: 2, done: false }
 console.log(generator.next()); // { value: 3, done: false }
@@ -51,7 +51,7 @@ console.log('counterGen', ...counterGen)
 ```javascript
 
 function* diologue() {
-  const name = yiled 'What is your name?';
+  const name = yield 'What is your name?';
   const age = yield `Hello ${name}, how old are you?`;
   yield `${name} is ${age} years old.`;
 }

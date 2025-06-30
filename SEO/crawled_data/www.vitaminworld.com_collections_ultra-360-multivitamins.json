@@ -1,0 +1,3473 @@
+{
+  "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins",
+  "crawlTime": "2025-05-14T08:14:59.805Z",
+  "title": "Vitamin World",
+  "description": "Vitamin World",
+  "bodyText": "(function(){ const TAG = 'spz-custom-brand-name'; class SpzCustomBrandName extends SPZ.BaseElement { constructor(element) { super(element); this.productId = \"\"; } buildCallback = () => { this.productId = this.element.getAttribute('productId'); } fnGetProductMetafiled = async () => { let brand_name_arr = localStorage.getItem(\"brand_name\"); let brand_name = \"\"; if(brand_name_arr){ brand_name_arr = JSON.parse(brand_name_arr); brand_name = brand_name_arr[\"brand_name_\"+this.productId]; } if(!brand_name || brand_name == \"\"){ const response = await fetch(`/api/front/metafields?owner_resource=product&owner_id=${this.productId}&namespace=bigCommerce`); const metafieldsRes = await response.json(); if(metafieldsRes){ brand_name = metafieldsRes?.data?.metafields.find(item => { return item.key == \"brand_name\"; }); brand_name_arr = localStorage.getItem(\"brand_name\"); brand_name = brand_name?.value; if(!brand_name_arr){ brand_name_arr = {}; }else{ brand_name_arr = JSON.parse(brand_name_arr); } brand_",
+  "links": [
+    {
+      "url": "https://www.vitaminworld.com/collections/$%7Bbrand_link%7D",
+      "anchorText": "${brandName}"
+    },
+    {
+      "url": "https://www.facebook.com/sharer.php?u=https://www.vitaminworld.com$%7Bproduct.url%7D",
+      "anchorText": ""
+    },
+    {
+      "url": "https://twitter.com/share?text=$%7Bproduct.title%7D&url=https://www.vitaminworld.com$%7Bproduct.url%7D",
+      "anchorText": ""
+    },
+    {
+      "url": "https://pinterest.com/pin/create/button/?url=https://www.vitaminworld.com$%7Bproduct.url%7D&media=$%7Bproduct.image.src%7D&description=$%7Bproduct.title%7D",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/account/login",
+      "anchorText": "Log in"
+    },
+    {
+      "url": "https://www.vitaminworld.com/account/points",
+      "anchorText": "${(\"My {points}\").replace(/\\{\\s*points\\s*\\}/, data.points_name)}"
+    },
+    {
+      "url": "https://www.vitaminworld.com/account/register",
+      "anchorText": "Register"
+    },
+    {
+      "url": "https://www.vitaminworld.com/cart",
+      "anchorText": "${data.data && data.data.count}"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/glp-1-support",
+      "anchorText": "GLP-1 SUPPORT"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/glp-1-support",
+      "anchorText": "All GLP-1 Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bone-health",
+      "anchorText": "Bone Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/muscle-loss",
+      "anchorText": "Muscle Loss"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-solutions",
+      "anchorText": "Energy Solutions"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutrition-support",
+      "anchorText": "Nutrition Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gut-health",
+      "anchorText": "Gut Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/weight-management",
+      "anchorText": "Weight Management"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/multivitamins",
+      "anchorText": "All Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins",
+      "anchorText": "ULTRA 360 Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/womens-multivitamins",
+      "anchorText": "Women's Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mens-multivitamins",
+      "anchorText": "Men's Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childrens-multivitamins",
+      "anchorText": "Children's Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gummy-vitamins-supplements",
+      "anchorText": "Gummy Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamins-supplements",
+      "anchorText": "All Vitamins & Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/letter-vitamins",
+      "anchorText": "Letter Vitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-a",
+      "anchorText": "Vitamin A"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-b",
+      "anchorText": "Vitamin B"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-c",
+      "anchorText": "Vitamin C"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-d",
+      "anchorText": "Vitamin D"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-e",
+      "anchorText": "Vitamin E"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/minerals",
+      "anchorText": "Minerals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/calcium",
+      "anchorText": "Calcium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/chromium",
+      "anchorText": "Chromium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/iron",
+      "anchorText": "Iron"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/magnesium",
+      "anchorText": "Magnesium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/selenium",
+      "anchorText": "Selenium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/zinc-vitamins",
+      "anchorText": "Zinc Vitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/supplements",
+      "anchorText": "Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/antioxidants",
+      "anchorText": "Antioxidants"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/amino-acids",
+      "anchorText": "Amino Acids"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/omega",
+      "anchorText": "Omega"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/protein-fitness",
+      "anchorText": "All Protein & Fitness"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/protein-powders",
+      "anchorText": "Protein Powders"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/casein",
+      "anchorText": "Casein"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mass-weight-gainer",
+      "anchorText": "Mass Weight Gainer"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/specialty-proteins",
+      "anchorText": "Specialty Proteins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vegan-plant-based-protein",
+      "anchorText": "Vegan & Plant Based Protein"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/whey-protein",
+      "anchorText": "Whey Protein"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/whey-protein-isolate",
+      "anchorText": "Whey Protein Isolate"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/performance-supplements",
+      "anchorText": "Performance Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/intra-workout",
+      "anchorText": "Intra-Workout"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/creatine",
+      "anchorText": "Creatine"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/post-workout",
+      "anchorText": "Post Workout"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/pre-workout",
+      "anchorText": "Pre Workout"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/testosterone-support",
+      "anchorText": "Testosterone Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/thermogenics",
+      "anchorText": "Thermogenics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/fitness-goals",
+      "anchorText": "Fitness Goals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/build-muscle",
+      "anchorText": "Build Muscle"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-endurance",
+      "anchorText": "Energy & Endurance"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-weight",
+      "anchorText": "Healthy Weight"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/probiotics-digestion",
+      "anchorText": "All Probiotics & Digestion"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/probiotics",
+      "anchorText": "Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/womens-probiotics",
+      "anchorText": "Women's Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mens-probiotics",
+      "anchorText": "Men's Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childrens-probiotics",
+      "anchorText": "Children's Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/enzymes",
+      "anchorText": "Enzymes"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cleanse-detox",
+      "anchorText": "Cleanse & Detox"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/fiber",
+      "anchorText": "Fiber"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/other-digestive-support",
+      "anchorText": "Other Digestive Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-weight",
+      "anchorText": "All Healthy Weight"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dietary-support",
+      "anchorText": "Dietary Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/apple-cider-vinegar",
+      "anchorText": "Apple Cider Vinegar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cla",
+      "anchorText": "CLA"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/coconut-oil",
+      "anchorText": "Coconut Oil"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garcina-cambogia",
+      "anchorText": "Garcina Cambogia"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/keto",
+      "anchorText": "Keto"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/metabolism-support",
+      "anchorText": "Metabolism Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-snacks",
+      "anchorText": "Healthy Snacks"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/meal-replacement",
+      "anchorText": "Meal Replacement"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/thermogenics",
+      "anchorText": "Thermogenics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-holistic-health",
+      "anchorText": "All Herbs & Holistic Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-a-z",
+      "anchorText": "Herbs A-Z"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-a-e",
+      "anchorText": "Herbs A-E"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-f-m",
+      "anchorText": "Herbs F-M"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-n-z",
+      "anchorText": "Herbs N-Z"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/popular-herbs",
+      "anchorText": "Popular Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/elderberry",
+      "anchorText": "Elderberry"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/maca",
+      "anchorText": "Maca"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/melatonin",
+      "anchorText": "Melatonin"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/saw-palmetto",
+      "anchorText": "Saw Palmetto"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/turmeric",
+      "anchorText": "Turmeric"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/health-concern",
+      "anchorText": "Health Concern"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/brain-memory-support",
+      "anchorText": "Brain & Memory Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/digestive-support",
+      "anchorText": "Digestive Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-support",
+      "anchorText": "Energy Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/immune-support",
+      "anchorText": "Immune Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mood-support",
+      "anchorText": "Mood Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sleep-support",
+      "anchorText": "Sleep Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/beauty-personal-care",
+      "anchorText": "All Beauty & Personal Care"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/skin-care",
+      "anchorText": "Skin Care"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hyaluronic-acid",
+      "anchorText": "Hyaluronic Acid"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-face-creams",
+      "anchorText": "Vitamin Face Creams"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-lotions-creams",
+      "anchorText": "Vitamin Lotions & Creams"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hair-skin-nails",
+      "anchorText": "Hair, Skin & Nails"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/collagen",
+      "anchorText": "Collagen"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/food-drink",
+      "anchorText": "All Food & Drink"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-drinks",
+      "anchorText": "Energy Drinks"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/smoothie-enhancers",
+      "anchorText": "Smoothie Enhancers"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/tea",
+      "anchorText": "Tea"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/superfoods",
+      "anchorText": "Superfoods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/beet",
+      "anchorText": "Beet"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/apple-cider-vinegar",
+      "anchorText": "Apple Cider Vinegar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/turmeric",
+      "anchorText": "Turmeric"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bee-products",
+      "anchorText": "Bee Products"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cranberry",
+      "anchorText": "Cranberry"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/green-tea",
+      "anchorText": "Green Tea"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-all",
+      "anchorText": "All Shop All"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-by-goal",
+      "anchorText": "Shop by Goal"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/heart-health",
+      "anchorText": "Heart Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/joint-health",
+      "anchorText": "Joint Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mens-health",
+      "anchorText": "Men's Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/womens-health",
+      "anchorText": "Women's Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childrens-health",
+      "anchorText": "Children's Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/immune-support",
+      "anchorText": "Immune Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mental-focus-energy",
+      "anchorText": "Mental Focus & Energy"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sleep-stress",
+      "anchorText": "Sleep & Stress"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-by-brand",
+      "anchorText": "Shop by Brand"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/alani-nu",
+      "anchorText": "Alani Nu"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/alive",
+      "anchorText": "Alive"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/amazing-herbs",
+      "anchorText": "Amazing Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/amino-sculpt",
+      "anchorText": "Amino Sculpt"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/animal-parade",
+      "anchorText": "Animal Parade"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/applied-nutrition",
+      "anchorText": "Applied Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/aura-cacia",
+      "anchorText": "Aura Cacia"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bang",
+      "anchorText": "Bang"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bsn",
+      "anchorText": "BSN"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bucked-up",
+      "anchorText": "Bucked Up"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cellucor",
+      "anchorText": "Cellucor"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/celsius",
+      "anchorText": "Celsius"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/century-systems",
+      "anchorText": "Century Systems"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childlife",
+      "anchorText": "ChildLife"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/codeage",
+      "anchorText": "Codeage"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/country-farms",
+      "anchorText": "Country Farms"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/culturelle",
+      "anchorText": "Culturelle"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/clif-bar",
+      "anchorText": "CLIF BAR"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/das-labs",
+      "anchorText": "DAS Labs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dr-bronner",
+      "anchorText": "Dr. Bronner"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dr-formulated",
+      "anchorText": "Dr. Formulated"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dr-woods",
+      "anchorText": "Dr. Woods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dymatize",
+      "anchorText": "Dymatize"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/eat-me-guilt-free",
+      "anchorText": "Eat Me Guilt Free"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/emergen",
+      "anchorText": "Emergen"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/emergen-c",
+      "anchorText": "Emergen-C"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ester-c",
+      "anchorText": "Ester-C"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/facetory",
+      "anchorText": "Facetory"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/fit-lean",
+      "anchorText": "Fit & Lean"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/flora",
+      "anchorText": "Flora"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/force-factor",
+      "anchorText": "Force Factor"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gaia-herbs",
+      "anchorText": "Gaia Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garden-of-life",
+      "anchorText": "Garden of Life"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garden-of-life-sport",
+      "anchorText": "Garden of Life Sport"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gat-sport",
+      "anchorText": "GAT Sport"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/goli-nutrition",
+      "anchorText": "Goli Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/green-foods",
+      "anchorText": "Green Foods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gummy-cuties",
+      "anchorText": "Gummy Cuties"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/health-direct",
+      "anchorText": "Health Direct"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthplus",
+      "anchorText": "HealthPlus"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/heaven-sent-naturals-inc",
+      "anchorText": "Heaven Sent Naturals, Inc."
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hero-nutritional",
+      "anchorText": "Hero Nutritional"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/high-t",
+      "anchorText": "High T"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/irwin-naturals",
+      "anchorText": "Irwin Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/isopure",
+      "anchorText": "Isopure"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/keto-science",
+      "anchorText": "Keto Science"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/lily-of-the-desert",
+      "anchorText": "Lily of the Desert"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/manukaguard",
+      "anchorText": "ManukaGuard"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mhp",
+      "anchorText": "MHP"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/lawren",
+      "anchorText": "Lawren"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/life-extension",
+      "anchorText": "Life Extension"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mill-creek",
+      "anchorText": "Mill Creek"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/musclemeds",
+      "anchorText": "MuscleMeds"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/muscletech",
+      "anchorText": "MuscleTech"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/my-kind-organics",
+      "anchorText": "My Kind Organics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natural-factors",
+      "anchorText": "Natural Factors"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natural-vitality",
+      "anchorText": "Natural Vitality"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-answer",
+      "anchorText": "Nature's Answer"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-best",
+      "anchorText": "Nature's Best"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-bounty",
+      "anchorText": "Nature's Bounty"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-plus",
+      "anchorText": "Nature's Plus"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-way",
+      "anchorText": "Nature's Way"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/neocell",
+      "anchorText": "Neocell"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nordic-naturals",
+      "anchorText": "Nordic Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/novex-biotech",
+      "anchorText": "Novex Biotech"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/now",
+      "anchorText": "NOW"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nugenix",
+      "anchorText": "Nugenix"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutrabolt",
+      "anchorText": "Nutrabolt"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutrex-hawaii",
+      "anchorText": "Nutrex Hawaii"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutri",
+      "anchorText": "Nutri"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nuun",
+      "anchorText": "Nuun"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/olly",
+      "anchorText": "OLLY"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/only-natural",
+      "anchorText": "Only Natural"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/optimum-nutrition",
+      "anchorText": "Optimum Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/outcast",
+      "anchorText": "Outcast"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/performix",
+      "anchorText": "Performix®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/planetary-herbals-llc",
+      "anchorText": "Planetary Herbals, LLC"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/planta",
+      "anchorText": "Planta"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/precision-engineered",
+      "anchorText": "Precision Engineered®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/prince-of-peace",
+      "anchorText": "Prince of Peace"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/pro-supps",
+      "anchorText": "Pro Supps"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/purified",
+      "anchorText": "Purified"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/quest-nutrition",
+      "anchorText": "Quest Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/raw-probiotics",
+      "anchorText": "Raw Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/redcon1",
+      "anchorText": "RedCon1"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/rejuvicare",
+      "anchorText": "Rejuvicare"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/relaxium",
+      "anchorText": "Relaxium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/reserveage-nutrition",
+      "anchorText": "Reserveage Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ridgecrest-herbals",
+      "anchorText": "Ridgecrest Herbals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ryse-fuel",
+      "anchorText": "Ryse Fuel"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/scivation",
+      "anchorText": "Scivation"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/serovital",
+      "anchorText": "SeroVita"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shikai",
+      "anchorText": "ShiKai"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/smartypants",
+      "anchorText": "SmartyPants"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/solgar",
+      "anchorText": "Solgar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/source-naturals",
+      "anchorText": "Source Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sundown",
+      "anchorText": "Sundown"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sunfood-bnf9",
+      "anchorText": "Sunfood™"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/the-cleaner",
+      "anchorText": "The Cleaner"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/think",
+      "anchorText": "Think!"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/think-jerky",
+      "anchorText": "Think Jerky"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/trace-minerals",
+      "anchorText": "Trace Minerals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/universal-nutrition",
+      "anchorText": "Universal Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitadrops",
+      "anchorText": "VitaDrops"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitafusion",
+      "anchorText": "Vitafusion"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vital-proteins",
+      "anchorText": "Vital Proteins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world®",
+      "anchorText": "Vitamin World"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vpx",
+      "anchorText": "VPX"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/wellgenix",
+      "anchorText": "Wellgenix"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/windmill-health-products",
+      "anchorText": "Windmill Health Products"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/xtend",
+      "anchorText": "Xtend"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/youtheory",
+      "anchorText": "Youtheory"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world-gummies",
+      "anchorText": "Vitamin World Gummies"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/best-sellers",
+      "anchorText": "Best Sellers"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gummy-vitamins-supplements",
+      "anchorText": "Gummy Vitamins & Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/new-arrivals",
+      "anchorText": "New Arrivals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins",
+      "anchorText": "ULTRA 360 Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vegan",
+      "anchorText": "Vegan"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/deals",
+      "anchorText": "All Deals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-vitamin-world",
+      "anchorText": "BOGO 50% OFF VITAMIN WORLD"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-precision-engineered®",
+      "anchorText": "BOGO 50% OFF PRECISION ENGINEERED"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-performix",
+      "anchorText": "BOGO 50% OFF PERFORMIX"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-codeage",
+      "anchorText": "BOGO 50% OFF CODEAGE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-vitafusion",
+      "anchorText": "BOGO 50% OFF VITAFUSION"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-nordic-naturals",
+      "anchorText": "BOGO 50% OFF NORDIC NATURALS"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/20-off-childlife",
+      "anchorText": "20% OFF CHILDLIFE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world®-special-price",
+      "anchorText": "VITAMIN WORLD: SPECIAL PRICE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/precision-engineered®-special-price",
+      "anchorText": "PRECISION ENGINEERED: SPECIAL PRICE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/clearance-uccr",
+      "anchorText": "CLEARANCE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hot-buy-7dmr",
+      "anchorText": "HOT BUY"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/best-sellers",
+      "anchorText": "BEST SELLERS"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/glp-1-support",
+      "anchorText": "GLP-1 SUPPORT"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/glp-1-support",
+      "anchorText": "All GLP-1 Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bone-health",
+      "anchorText": "Bone Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/muscle-loss",
+      "anchorText": "Muscle Loss"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-solutions",
+      "anchorText": "Energy Solutions"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutrition-support",
+      "anchorText": "Nutrition Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gut-health",
+      "anchorText": "Gut Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/weight-management",
+      "anchorText": "Weight Management"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/multivitamins",
+      "anchorText": "All Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins",
+      "anchorText": "ULTRA 360 Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/womens-multivitamins",
+      "anchorText": "Women's Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mens-multivitamins",
+      "anchorText": "Men's Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childrens-multivitamins",
+      "anchorText": "Children's Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gummy-vitamins-supplements",
+      "anchorText": "Gummy Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamins-supplements",
+      "anchorText": "All Vitamins & Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/letter-vitamins",
+      "anchorText": "Letter Vitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-a",
+      "anchorText": "Vitamin A"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-b",
+      "anchorText": "Vitamin B"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-c",
+      "anchorText": "Vitamin C"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-d",
+      "anchorText": "Vitamin D"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-e",
+      "anchorText": "Vitamin E"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/minerals",
+      "anchorText": "Minerals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/calcium",
+      "anchorText": "Calcium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/chromium",
+      "anchorText": "Chromium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/iron",
+      "anchorText": "Iron"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/magnesium",
+      "anchorText": "Magnesium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/selenium",
+      "anchorText": "Selenium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/zinc-vitamins",
+      "anchorText": "Zinc Vitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/supplements",
+      "anchorText": "Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/antioxidants",
+      "anchorText": "Antioxidants"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/amino-acids",
+      "anchorText": "Amino Acids"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/omega",
+      "anchorText": "Omega"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/protein-fitness",
+      "anchorText": "All Protein & Fitness"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/protein-powders",
+      "anchorText": "Protein Powders"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/casein",
+      "anchorText": "Casein"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mass-weight-gainer",
+      "anchorText": "Mass Weight Gainer"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/specialty-proteins",
+      "anchorText": "Specialty Proteins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vegan-plant-based-protein",
+      "anchorText": "Vegan & Plant Based Protein"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/whey-protein",
+      "anchorText": "Whey Protein"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/whey-protein-isolate",
+      "anchorText": "Whey Protein Isolate"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/performance-supplements",
+      "anchorText": "Performance Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/intra-workout",
+      "anchorText": "Intra-Workout"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/creatine",
+      "anchorText": "Creatine"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/post-workout",
+      "anchorText": "Post Workout"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/pre-workout",
+      "anchorText": "Pre Workout"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/testosterone-support",
+      "anchorText": "Testosterone Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/thermogenics",
+      "anchorText": "Thermogenics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/fitness-goals",
+      "anchorText": "Fitness Goals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/build-muscle",
+      "anchorText": "Build Muscle"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-endurance",
+      "anchorText": "Energy & Endurance"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-weight",
+      "anchorText": "Healthy Weight"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/probiotics-digestion",
+      "anchorText": "All Probiotics & Digestion"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/probiotics",
+      "anchorText": "Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/womens-probiotics",
+      "anchorText": "Women's Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mens-probiotics",
+      "anchorText": "Men's Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childrens-probiotics",
+      "anchorText": "Children's Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/enzymes",
+      "anchorText": "Enzymes"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cleanse-detox",
+      "anchorText": "Cleanse & Detox"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/fiber",
+      "anchorText": "Fiber"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/other-digestive-support",
+      "anchorText": "Other Digestive Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-weight",
+      "anchorText": "All Healthy Weight"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dietary-support",
+      "anchorText": "Dietary Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/apple-cider-vinegar",
+      "anchorText": "Apple Cider Vinegar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cla",
+      "anchorText": "CLA"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/coconut-oil",
+      "anchorText": "Coconut Oil"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garcina-cambogia",
+      "anchorText": "Garcina Cambogia"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/keto",
+      "anchorText": "Keto"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/metabolism-support",
+      "anchorText": "Metabolism Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-snacks",
+      "anchorText": "Healthy Snacks"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/meal-replacement",
+      "anchorText": "Meal Replacement"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/thermogenics",
+      "anchorText": "Thermogenics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-holistic-health",
+      "anchorText": "All Herbs & Holistic Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-a-z",
+      "anchorText": "Herbs A-Z"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-a-e",
+      "anchorText": "Herbs A-E"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-f-m",
+      "anchorText": "Herbs F-M"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-n-z",
+      "anchorText": "Herbs N-Z"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/popular-herbs",
+      "anchorText": "Popular Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/elderberry",
+      "anchorText": "Elderberry"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/maca",
+      "anchorText": "Maca"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/melatonin",
+      "anchorText": "Melatonin"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/saw-palmetto",
+      "anchorText": "Saw Palmetto"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/turmeric",
+      "anchorText": "Turmeric"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/health-concern",
+      "anchorText": "Health Concern"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/brain-memory-support",
+      "anchorText": "Brain & Memory Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/digestive-support",
+      "anchorText": "Digestive Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-support",
+      "anchorText": "Energy Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/immune-support",
+      "anchorText": "Immune Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mood-support",
+      "anchorText": "Mood Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sleep-support",
+      "anchorText": "Sleep Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/beauty-personal-care",
+      "anchorText": "All Beauty & Personal Care"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/skin-care",
+      "anchorText": "Skin Care"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hyaluronic-acid",
+      "anchorText": "Hyaluronic Acid"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-face-creams",
+      "anchorText": "Vitamin Face Creams"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-lotions-creams",
+      "anchorText": "Vitamin Lotions & Creams"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hair-skin-nails",
+      "anchorText": "Hair, Skin & Nails"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/collagen",
+      "anchorText": "Collagen"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/food-drink",
+      "anchorText": "All Food & Drink"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-drinks",
+      "anchorText": "Energy Drinks"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/smoothie-enhancers",
+      "anchorText": "Smoothie Enhancers"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/tea",
+      "anchorText": "Tea"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/superfoods",
+      "anchorText": "Superfoods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/beet",
+      "anchorText": "Beet"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/apple-cider-vinegar",
+      "anchorText": "Apple Cider Vinegar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/turmeric",
+      "anchorText": "Turmeric"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bee-products",
+      "anchorText": "Bee Products"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cranberry",
+      "anchorText": "Cranberry"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/green-tea",
+      "anchorText": "Green Tea"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-all",
+      "anchorText": "All Shop All"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-by-goal",
+      "anchorText": "Shop by Goal"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/heart-health",
+      "anchorText": "Heart Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/joint-health",
+      "anchorText": "Joint Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mens-health",
+      "anchorText": "Men's Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/womens-health",
+      "anchorText": "Women's Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childrens-health",
+      "anchorText": "Children's Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/immune-support",
+      "anchorText": "Immune Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mental-focus-energy",
+      "anchorText": "Mental Focus & Energy"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sleep-stress",
+      "anchorText": "Sleep & Stress"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-by-brand",
+      "anchorText": "Shop by Brand"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/alani-nu",
+      "anchorText": "Alani Nu"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/alive",
+      "anchorText": "Alive"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/amazing-herbs",
+      "anchorText": "Amazing Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/amino-sculpt",
+      "anchorText": "Amino Sculpt"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/animal-parade",
+      "anchorText": "Animal Parade"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/applied-nutrition",
+      "anchorText": "Applied Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/aura-cacia",
+      "anchorText": "Aura Cacia"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bang",
+      "anchorText": "Bang"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bsn",
+      "anchorText": "BSN"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bucked-up",
+      "anchorText": "Bucked Up"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cellucor",
+      "anchorText": "Cellucor"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/celsius",
+      "anchorText": "Celsius"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/century-systems",
+      "anchorText": "Century Systems"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childlife",
+      "anchorText": "ChildLife"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/codeage",
+      "anchorText": "Codeage"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/country-farms",
+      "anchorText": "Country Farms"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/culturelle",
+      "anchorText": "Culturelle"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/clif-bar",
+      "anchorText": "CLIF BAR"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/das-labs",
+      "anchorText": "DAS Labs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dr-bronner",
+      "anchorText": "Dr. Bronner"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dr-formulated",
+      "anchorText": "Dr. Formulated"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dr-woods",
+      "anchorText": "Dr. Woods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dymatize",
+      "anchorText": "Dymatize"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/eat-me-guilt-free",
+      "anchorText": "Eat Me Guilt Free"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/emergen",
+      "anchorText": "Emergen"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/emergen-c",
+      "anchorText": "Emergen-C"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ester-c",
+      "anchorText": "Ester-C"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/facetory",
+      "anchorText": "Facetory"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/fit-lean",
+      "anchorText": "Fit & Lean"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/flora",
+      "anchorText": "Flora"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/force-factor",
+      "anchorText": "Force Factor"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gaia-herbs",
+      "anchorText": "Gaia Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garden-of-life",
+      "anchorText": "Garden of Life"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garden-of-life-sport",
+      "anchorText": "Garden of Life Sport"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gat-sport",
+      "anchorText": "GAT Sport"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/goli-nutrition",
+      "anchorText": "Goli Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/green-foods",
+      "anchorText": "Green Foods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gummy-cuties",
+      "anchorText": "Gummy Cuties"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/health-direct",
+      "anchorText": "Health Direct"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthplus",
+      "anchorText": "HealthPlus"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/heaven-sent-naturals-inc",
+      "anchorText": "Heaven Sent Naturals, Inc."
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hero-nutritional",
+      "anchorText": "Hero Nutritional"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/high-t",
+      "anchorText": "High T"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/irwin-naturals",
+      "anchorText": "Irwin Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/isopure",
+      "anchorText": "Isopure"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/keto-science",
+      "anchorText": "Keto Science"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/lily-of-the-desert",
+      "anchorText": "Lily of the Desert"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/manukaguard",
+      "anchorText": "ManukaGuard"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mhp",
+      "anchorText": "MHP"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/lawren",
+      "anchorText": "Lawren"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/life-extension",
+      "anchorText": "Life Extension"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mill-creek",
+      "anchorText": "Mill Creek"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/musclemeds",
+      "anchorText": "MuscleMeds"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/muscletech",
+      "anchorText": "MuscleTech"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/my-kind-organics",
+      "anchorText": "My Kind Organics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natural-factors",
+      "anchorText": "Natural Factors"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natural-vitality",
+      "anchorText": "Natural Vitality"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-answer",
+      "anchorText": "Nature's Answer"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-best",
+      "anchorText": "Nature's Best"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-bounty",
+      "anchorText": "Nature's Bounty"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-plus",
+      "anchorText": "Nature's Plus"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-way",
+      "anchorText": "Nature's Way"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/neocell",
+      "anchorText": "Neocell"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nordic-naturals",
+      "anchorText": "Nordic Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/novex-biotech",
+      "anchorText": "Novex Biotech"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/now",
+      "anchorText": "NOW"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nugenix",
+      "anchorText": "Nugenix"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutrabolt",
+      "anchorText": "Nutrabolt"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutrex-hawaii",
+      "anchorText": "Nutrex Hawaii"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutri",
+      "anchorText": "Nutri"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nuun",
+      "anchorText": "Nuun"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/olly",
+      "anchorText": "OLLY"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/only-natural",
+      "anchorText": "Only Natural"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/optimum-nutrition",
+      "anchorText": "Optimum Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/outcast",
+      "anchorText": "Outcast"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/performix",
+      "anchorText": "Performix®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/planetary-herbals-llc",
+      "anchorText": "Planetary Herbals, LLC"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/planta",
+      "anchorText": "Planta"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/precision-engineered",
+      "anchorText": "Precision Engineered®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/prince-of-peace",
+      "anchorText": "Prince of Peace"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/pro-supps",
+      "anchorText": "Pro Supps"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/purified",
+      "anchorText": "Purified"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/quest-nutrition",
+      "anchorText": "Quest Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/raw-probiotics",
+      "anchorText": "Raw Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/redcon1",
+      "anchorText": "RedCon1"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/rejuvicare",
+      "anchorText": "Rejuvicare"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/relaxium",
+      "anchorText": "Relaxium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/reserveage-nutrition",
+      "anchorText": "Reserveage Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ridgecrest-herbals",
+      "anchorText": "Ridgecrest Herbals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ryse-fuel",
+      "anchorText": "Ryse Fuel"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/scivation",
+      "anchorText": "Scivation"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/serovital",
+      "anchorText": "SeroVita"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shikai",
+      "anchorText": "ShiKai"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/smartypants",
+      "anchorText": "SmartyPants"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/solgar",
+      "anchorText": "Solgar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/source-naturals",
+      "anchorText": "Source Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sundown",
+      "anchorText": "Sundown"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sunfood-bnf9",
+      "anchorText": "Sunfood™"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/the-cleaner",
+      "anchorText": "The Cleaner"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/think",
+      "anchorText": "Think!"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/think-jerky",
+      "anchorText": "Think Jerky"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/trace-minerals",
+      "anchorText": "Trace Minerals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/universal-nutrition",
+      "anchorText": "Universal Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitadrops",
+      "anchorText": "VitaDrops"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitafusion",
+      "anchorText": "Vitafusion"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vital-proteins",
+      "anchorText": "Vital Proteins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world®",
+      "anchorText": "Vitamin World"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vpx",
+      "anchorText": "VPX"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/wellgenix",
+      "anchorText": "Wellgenix"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/windmill-health-products",
+      "anchorText": "Windmill Health Products"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/xtend",
+      "anchorText": "Xtend"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/youtheory",
+      "anchorText": "Youtheory"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world-gummies",
+      "anchorText": "Vitamin World Gummies"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/best-sellers",
+      "anchorText": "Best Sellers"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gummy-vitamins-supplements",
+      "anchorText": "Gummy Vitamins & Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/new-arrivals",
+      "anchorText": "New Arrivals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins",
+      "anchorText": "ULTRA 360 Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vegan",
+      "anchorText": "Vegan"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/deals",
+      "anchorText": "All Deals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-vitamin-world",
+      "anchorText": "BOGO 50% OFF VITAMIN WORLD"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-precision-engineered®",
+      "anchorText": "BOGO 50% OFF PRECISION ENGINEERED"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-performix",
+      "anchorText": "BOGO 50% OFF PERFORMIX"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-codeage",
+      "anchorText": "BOGO 50% OFF CODEAGE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-vitafusion",
+      "anchorText": "BOGO 50% OFF VITAFUSION"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-nordic-naturals",
+      "anchorText": "BOGO 50% OFF NORDIC NATURALS"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/20-off-childlife",
+      "anchorText": "20% OFF CHILDLIFE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world®-special-price",
+      "anchorText": "VITAMIN WORLD: SPECIAL PRICE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/precision-engineered®-special-price",
+      "anchorText": "PRECISION ENGINEERED: SPECIAL PRICE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/clearance-uccr",
+      "anchorText": "CLEARANCE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hot-buy-7dmr",
+      "anchorText": "HOT BUY"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/best-sellers",
+      "anchorText": "BEST SELLERS"
+    },
+    {
+      "url": "https://www.vitaminworld.com/",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/account/login",
+      "anchorText": "Log in"
+    },
+    {
+      "url": "https://www.vitaminworld.com/account/points",
+      "anchorText": "${(\"My {points}\").replace(/\\{\\s*points\\s*\\}/, data.points_name)}"
+    },
+    {
+      "url": "https://www.vitaminworld.com/account/register",
+      "anchorText": "Register"
+    },
+    {
+      "url": "https://www.vitaminworld.com/cart",
+      "anchorText": "${data.data && data.data.count}"
+    },
+    {
+      "url": "https://www.vitaminworld.com/search?q=$%7Bkeyword%7D",
+      "anchorText": "View more"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/glp-1-support",
+      "anchorText": "GLP-1 SUPPORT"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/glp-1-support",
+      "anchorText": "All GLP-1 Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bone-health",
+      "anchorText": "Bone Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/muscle-loss",
+      "anchorText": "Muscle Loss"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-solutions",
+      "anchorText": "Energy Solutions"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutrition-support",
+      "anchorText": "Nutrition Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gut-health",
+      "anchorText": "Gut Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/weight-management",
+      "anchorText": "Weight Management"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/multivitamins",
+      "anchorText": "All Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins",
+      "anchorText": "ULTRA 360 Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/womens-multivitamins",
+      "anchorText": "Women's Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mens-multivitamins",
+      "anchorText": "Men's Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childrens-multivitamins",
+      "anchorText": "Children's Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gummy-vitamins-supplements",
+      "anchorText": "Gummy Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamins-supplements",
+      "anchorText": "All Vitamins & Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/letter-vitamins",
+      "anchorText": "Letter Vitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-a",
+      "anchorText": "Vitamin A"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-b",
+      "anchorText": "Vitamin B"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-c",
+      "anchorText": "Vitamin C"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-d",
+      "anchorText": "Vitamin D"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-e",
+      "anchorText": "Vitamin E"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/minerals",
+      "anchorText": "Minerals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/calcium",
+      "anchorText": "Calcium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/chromium",
+      "anchorText": "Chromium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/iron",
+      "anchorText": "Iron"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/magnesium",
+      "anchorText": "Magnesium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/selenium",
+      "anchorText": "Selenium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/zinc-vitamins",
+      "anchorText": "Zinc Vitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/supplements",
+      "anchorText": "Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/antioxidants",
+      "anchorText": "Antioxidants"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/amino-acids",
+      "anchorText": "Amino Acids"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/omega",
+      "anchorText": "Omega"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/protein-fitness",
+      "anchorText": "All Protein & Fitness"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/protein-powders",
+      "anchorText": "Protein Powders"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/casein",
+      "anchorText": "Casein"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mass-weight-gainer",
+      "anchorText": "Mass Weight Gainer"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/specialty-proteins",
+      "anchorText": "Specialty Proteins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vegan-plant-based-protein",
+      "anchorText": "Vegan & Plant Based Protein"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/whey-protein",
+      "anchorText": "Whey Protein"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/whey-protein-isolate",
+      "anchorText": "Whey Protein Isolate"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/performance-supplements",
+      "anchorText": "Performance Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/intra-workout",
+      "anchorText": "Intra-Workout"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/creatine",
+      "anchorText": "Creatine"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/post-workout",
+      "anchorText": "Post Workout"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/pre-workout",
+      "anchorText": "Pre Workout"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/testosterone-support",
+      "anchorText": "Testosterone Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/thermogenics",
+      "anchorText": "Thermogenics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/fitness-goals",
+      "anchorText": "Fitness Goals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/build-muscle",
+      "anchorText": "Build Muscle"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-endurance",
+      "anchorText": "Energy & Endurance"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-weight",
+      "anchorText": "Healthy Weight"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/probiotics-digestion",
+      "anchorText": "All Probiotics & Digestion"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/probiotics",
+      "anchorText": "Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/womens-probiotics",
+      "anchorText": "Women's Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mens-probiotics",
+      "anchorText": "Men's Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childrens-probiotics",
+      "anchorText": "Children's Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/enzymes",
+      "anchorText": "Enzymes"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cleanse-detox",
+      "anchorText": "Cleanse & Detox"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/fiber",
+      "anchorText": "Fiber"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/other-digestive-support",
+      "anchorText": "Other Digestive Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-weight",
+      "anchorText": "All Healthy Weight"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dietary-support",
+      "anchorText": "Dietary Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/apple-cider-vinegar",
+      "anchorText": "Apple Cider Vinegar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cla",
+      "anchorText": "CLA"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/coconut-oil",
+      "anchorText": "Coconut Oil"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garcina-cambogia",
+      "anchorText": "Garcina Cambogia"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/keto",
+      "anchorText": "Keto"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/metabolism-support",
+      "anchorText": "Metabolism Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-snacks",
+      "anchorText": "Healthy Snacks"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/meal-replacement",
+      "anchorText": "Meal Replacement"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/thermogenics",
+      "anchorText": "Thermogenics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-holistic-health",
+      "anchorText": "All Herbs & Holistic Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-a-z",
+      "anchorText": "Herbs A-Z"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-a-e",
+      "anchorText": "Herbs A-E"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-f-m",
+      "anchorText": "Herbs F-M"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-n-z",
+      "anchorText": "Herbs N-Z"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/popular-herbs",
+      "anchorText": "Popular Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/elderberry",
+      "anchorText": "Elderberry"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/maca",
+      "anchorText": "Maca"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/melatonin",
+      "anchorText": "Melatonin"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/saw-palmetto",
+      "anchorText": "Saw Palmetto"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/turmeric",
+      "anchorText": "Turmeric"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/health-concern",
+      "anchorText": "Health Concern"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/brain-memory-support",
+      "anchorText": "Brain & Memory Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/digestive-support",
+      "anchorText": "Digestive Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-support",
+      "anchorText": "Energy Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/immune-support",
+      "anchorText": "Immune Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mood-support",
+      "anchorText": "Mood Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sleep-support",
+      "anchorText": "Sleep Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/beauty-personal-care",
+      "anchorText": "All Beauty & Personal Care"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/skin-care",
+      "anchorText": "Skin Care"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hyaluronic-acid",
+      "anchorText": "Hyaluronic Acid"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-face-creams",
+      "anchorText": "Vitamin Face Creams"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-lotions-creams",
+      "anchorText": "Vitamin Lotions & Creams"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hair-skin-nails",
+      "anchorText": "Hair, Skin & Nails"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/collagen",
+      "anchorText": "Collagen"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/food-drink",
+      "anchorText": "All Food & Drink"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/energy-drinks",
+      "anchorText": "Energy Drinks"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/smoothie-enhancers",
+      "anchorText": "Smoothie Enhancers"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/tea",
+      "anchorText": "Tea"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/superfoods",
+      "anchorText": "Superfoods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/beet",
+      "anchorText": "Beet"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/apple-cider-vinegar",
+      "anchorText": "Apple Cider Vinegar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/turmeric",
+      "anchorText": "Turmeric"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bee-products",
+      "anchorText": "Bee Products"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cranberry",
+      "anchorText": "Cranberry"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/green-tea",
+      "anchorText": "Green Tea"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-all",
+      "anchorText": "All Shop All"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-by-goal",
+      "anchorText": "Shop by Goal"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/heart-health",
+      "anchorText": "Heart Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/joint-health",
+      "anchorText": "Joint Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mens-health",
+      "anchorText": "Men's Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/womens-health",
+      "anchorText": "Women's Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childrens-health",
+      "anchorText": "Children's Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/immune-support",
+      "anchorText": "Immune Support"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mental-focus-energy",
+      "anchorText": "Mental Focus & Energy"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sleep-stress",
+      "anchorText": "Sleep & Stress"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-by-brand",
+      "anchorText": "Shop by Brand"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/alani-nu",
+      "anchorText": "Alani Nu"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/alive",
+      "anchorText": "Alive"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/amazing-herbs",
+      "anchorText": "Amazing Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/amino-sculpt",
+      "anchorText": "Amino Sculpt"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/animal-parade",
+      "anchorText": "Animal Parade"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/applied-nutrition",
+      "anchorText": "Applied Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/aura-cacia",
+      "anchorText": "Aura Cacia"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bang",
+      "anchorText": "Bang"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bsn",
+      "anchorText": "BSN"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bucked-up",
+      "anchorText": "Bucked Up"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/cellucor",
+      "anchorText": "Cellucor"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/celsius",
+      "anchorText": "Celsius"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/century-systems",
+      "anchorText": "Century Systems"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/childlife",
+      "anchorText": "ChildLife"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/codeage",
+      "anchorText": "Codeage"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/country-farms",
+      "anchorText": "Country Farms"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/culturelle",
+      "anchorText": "Culturelle"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/clif-bar",
+      "anchorText": "CLIF BAR"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/das-labs",
+      "anchorText": "DAS Labs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dr-bronner",
+      "anchorText": "Dr. Bronner"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dr-formulated",
+      "anchorText": "Dr. Formulated"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dr-woods",
+      "anchorText": "Dr. Woods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/dymatize",
+      "anchorText": "Dymatize"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/eat-me-guilt-free",
+      "anchorText": "Eat Me Guilt Free"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/emergen",
+      "anchorText": "Emergen"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/emergen-c",
+      "anchorText": "Emergen-C"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ester-c",
+      "anchorText": "Ester-C"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/facetory",
+      "anchorText": "Facetory"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/fit-lean",
+      "anchorText": "Fit & Lean"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/flora",
+      "anchorText": "Flora"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/force-factor",
+      "anchorText": "Force Factor"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gaia-herbs",
+      "anchorText": "Gaia Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garden-of-life",
+      "anchorText": "Garden of Life"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garden-of-life-sport",
+      "anchorText": "Garden of Life Sport"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gat-sport",
+      "anchorText": "GAT Sport"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/goli-nutrition",
+      "anchorText": "Goli Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/green-foods",
+      "anchorText": "Green Foods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gummy-cuties",
+      "anchorText": "Gummy Cuties"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/health-direct",
+      "anchorText": "Health Direct"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthplus",
+      "anchorText": "HealthPlus"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/heaven-sent-naturals-inc",
+      "anchorText": "Heaven Sent Naturals, Inc."
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hero-nutritional",
+      "anchorText": "Hero Nutritional"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/high-t",
+      "anchorText": "High T"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/irwin-naturals",
+      "anchorText": "Irwin Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/isopure",
+      "anchorText": "Isopure"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/keto-science",
+      "anchorText": "Keto Science"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/lily-of-the-desert",
+      "anchorText": "Lily of the Desert"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/manukaguard",
+      "anchorText": "ManukaGuard"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mhp",
+      "anchorText": "MHP"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/lawren",
+      "anchorText": "Lawren"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/life-extension",
+      "anchorText": "Life Extension"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/mill-creek",
+      "anchorText": "Mill Creek"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/musclemeds",
+      "anchorText": "MuscleMeds"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/muscletech",
+      "anchorText": "MuscleTech"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/my-kind-organics",
+      "anchorText": "My Kind Organics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natural-factors",
+      "anchorText": "Natural Factors"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natural-vitality",
+      "anchorText": "Natural Vitality"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-answer",
+      "anchorText": "Nature's Answer"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-best",
+      "anchorText": "Nature's Best"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-bounty",
+      "anchorText": "Nature's Bounty"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-plus",
+      "anchorText": "Nature's Plus"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/natures-way",
+      "anchorText": "Nature's Way"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/neocell",
+      "anchorText": "Neocell"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nordic-naturals",
+      "anchorText": "Nordic Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/novex-biotech",
+      "anchorText": "Novex Biotech"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/now",
+      "anchorText": "NOW"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nugenix",
+      "anchorText": "Nugenix"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutrabolt",
+      "anchorText": "Nutrabolt"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutrex-hawaii",
+      "anchorText": "Nutrex Hawaii"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nutri",
+      "anchorText": "Nutri"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/nuun",
+      "anchorText": "Nuun"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/olly",
+      "anchorText": "OLLY"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/only-natural",
+      "anchorText": "Only Natural"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/optimum-nutrition",
+      "anchorText": "Optimum Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/outcast",
+      "anchorText": "Outcast"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/performix",
+      "anchorText": "Performix®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/planetary-herbals-llc",
+      "anchorText": "Planetary Herbals, LLC"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/planta",
+      "anchorText": "Planta"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/precision-engineered",
+      "anchorText": "Precision Engineered®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/prince-of-peace",
+      "anchorText": "Prince of Peace"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/pro-supps",
+      "anchorText": "Pro Supps"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/purified",
+      "anchorText": "Purified"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/quest-nutrition",
+      "anchorText": "Quest Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/raw-probiotics",
+      "anchorText": "Raw Probiotics"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/redcon1",
+      "anchorText": "RedCon1"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/rejuvicare",
+      "anchorText": "Rejuvicare"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/relaxium",
+      "anchorText": "Relaxium"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/reserveage-nutrition",
+      "anchorText": "Reserveage Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ridgecrest-herbals",
+      "anchorText": "Ridgecrest Herbals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ryse-fuel",
+      "anchorText": "Ryse Fuel"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/scivation",
+      "anchorText": "Scivation"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/serovital",
+      "anchorText": "SeroVita"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shikai",
+      "anchorText": "ShiKai"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/smartypants",
+      "anchorText": "SmartyPants"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/solgar",
+      "anchorText": "Solgar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/source-naturals",
+      "anchorText": "Source Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sundown",
+      "anchorText": "Sundown"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/sunfood-bnf9",
+      "anchorText": "Sunfood™"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/the-cleaner",
+      "anchorText": "The Cleaner"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/think",
+      "anchorText": "Think!"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/think-jerky",
+      "anchorText": "Think Jerky"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/trace-minerals",
+      "anchorText": "Trace Minerals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/universal-nutrition",
+      "anchorText": "Universal Nutrition"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitadrops",
+      "anchorText": "VitaDrops"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitafusion",
+      "anchorText": "Vitafusion"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vital-proteins",
+      "anchorText": "Vital Proteins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world®",
+      "anchorText": "Vitamin World"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vpx",
+      "anchorText": "VPX"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/wellgenix",
+      "anchorText": "Wellgenix"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/windmill-health-products",
+      "anchorText": "Windmill Health Products"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/xtend",
+      "anchorText": "Xtend"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/youtheory",
+      "anchorText": "Youtheory"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world-gummies",
+      "anchorText": "Vitamin World Gummies"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/best-sellers",
+      "anchorText": "Best Sellers"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gummy-vitamins-supplements",
+      "anchorText": "Gummy Vitamins & Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/new-arrivals",
+      "anchorText": "New Arrivals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins",
+      "anchorText": "ULTRA 360 Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vegan",
+      "anchorText": "Vegan"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/deals",
+      "anchorText": "All Deals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-vitamin-world",
+      "anchorText": "BOGO 50% OFF VITAMIN WORLD"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-precision-engineered®",
+      "anchorText": "BOGO 50% OFF PRECISION ENGINEERED"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-performix",
+      "anchorText": "BOGO 50% OFF PERFORMIX"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-codeage",
+      "anchorText": "BOGO 50% OFF CODEAGE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-vitafusion",
+      "anchorText": "BOGO 50% OFF VITAFUSION"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/bogo-50-off-nordic-naturals",
+      "anchorText": "BOGO 50% OFF NORDIC NATURALS"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/20-off-childlife",
+      "anchorText": "20% OFF CHILDLIFE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world®-special-price",
+      "anchorText": "VITAMIN WORLD: SPECIAL PRICE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/precision-engineered®-special-price",
+      "anchorText": "PRECISION ENGINEERED: SPECIAL PRICE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/clearance-uccr",
+      "anchorText": "CLEARANCE"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/hot-buy-7dmr",
+      "anchorText": "HOT BUY"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/best-sellers",
+      "anchorText": "BEST SELLERS"
+    },
+    {
+      "url": "https://www.vitaminworld.com/account/login",
+      "anchorText": "Log in"
+    },
+    {
+      "url": "https://www.vitaminworld.com/account/register",
+      "anchorText": "Register"
+    },
+    {
+      "url": "https://www.vitaminworld.com/",
+      "anchorText": "Home"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/multivitamins",
+      "anchorText": "Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins",
+      "anchorText": "ULTRA 360 Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-max-multivitamin",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/products/ultra-360-mens-max-multivitamin",
+      "anchorText": "Choose Options"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-max-multivitamin",
+      "anchorText": "ULTRA 360 Men's Max Multivitamin"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-max-multivitamin?variant=c317a9dc-0cec-4f2f-95ae-102b6b50ea23",
+      "anchorText": "$39.99\n          \n            Min price $39.99\n            \n         - $59.99Max price $59.99"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-womens-50-multivitamin",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/products/ultra-360-womens-50-multivitamin",
+      "anchorText": "Choose Options"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-womens-50-multivitamin",
+      "anchorText": "ULTRA 360 Women's 50+ Multivitamin"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-womens-50-multivitamin?variant=5c5148f3-5bf3-4f7b-b8e8-c2ce1f5ff02e",
+      "anchorText": "$22.99\n          \n            Min price $22.99\n            \n         - $35.99Max price $35.99"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-multivitamin-50-plus",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/products/ultra-360-mens-multivitamin-50-plus",
+      "anchorText": "Choose Options"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-multivitamin-50-plus",
+      "anchorText": "ULTRA 360 Men’s Multivitamin 50 Plus"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-multivitamin-50-plus?variant=3b809096-4d53-4588-9ca0-e520ac00d1f4",
+      "anchorText": "$22.99\n          \n            Min price $22.99\n            \n         - $35.99Max price $35.99"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-once-daily-multivitamin",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-once-daily-multivitamin",
+      "anchorText": "ULTRA 360 Men's Once Daily Multivitamin"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-once-daily-multivitamin?variant=c4f013be-9a91-4ba2-ab7e-46ac9485b725",
+      "anchorText": "$19.99\n          \n            Sale price $19.99"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-multivitamin-sport",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/products/ultra-360-mens-multivitamin-sport",
+      "anchorText": "Choose Options"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-multivitamin-sport",
+      "anchorText": "ULTRA 360 Men's Multivitamin Sport"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-mens-multivitamin-sport?variant=1d3fc833-b1a2-49b8-a993-ffc0b436f9f3",
+      "anchorText": "$28.99\n          \n            Min price $28.99\n            \n         - $45.99Max price $45.99"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-womens-once-daily-multivitamin",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-womens-once-daily-multivitamin",
+      "anchorText": "ULTRA 360 Women's Once Daily Multivitamin"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-womens-once-daily-multivitamin?variant=2f5dffd2-deac-4ef5-bde0-1ba42f80761f",
+      "anchorText": "$19.99\n          \n            Sale price $19.99"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-active-womens-multivitamin",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/products/ultra-360-active-womens-multivitamin",
+      "anchorText": "Choose Options"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-active-womens-multivitamin",
+      "anchorText": "ULTRA 360 Active Women’s Multivitamin"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-active-womens-multivitamin?variant=63a4ff76-e081-4cfd-a078-f557eda4dbe5",
+      "anchorText": "$28.99\n          \n            Min price $28.99\n            \n         - $45.99Max price $45.99"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-womens-multivitamin",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/products/ultra-360-womens-multivitamin",
+      "anchorText": "Choose Options"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-womens-multivitamin",
+      "anchorText": "ULTRA 360 Women's Multivitamin"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-womens-multivitamin?variant=a338ac8d-049a-4c6d-8a8a-9a91389393c4",
+      "anchorText": "$22.99\n          \n            Min price $22.99\n            \n         - $35.99Max price $35.99"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-men-s-multivitamin",
+      "anchorText": ""
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-men-s-multivitamin",
+      "anchorText": "ULTRA 360 Men's Multi"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/ultra-360-multivitamins/products/ultra-360-men-s-multivitamin?variant=82d8bf44-6b02-4515-a5b7-f8ffbf91533e",
+      "anchorText": "$35.99\n          \n            Sale price $35.99"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/shipping",
+      "anchorText": "Shipping Policy"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/return-policy",
+      "anchorText": "Return Policy"
+    },
+    {
+      "url": "https://www.vitaminworld.com/blogs/blog",
+      "anchorText": "Blog"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/contact-us",
+      "anchorText": "Contact Us"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/store-locator",
+      "anchorText": "Store Locator"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/coupons-promotions",
+      "anchorText": "Coupons & Promotions"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/accessibility-statement",
+      "anchorText": "Accessibility Statement"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/privacy-statement",
+      "anchorText": "Privacy Statement"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/sitemap",
+      "anchorText": "Sitemap"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/shipping",
+      "anchorText": "Shipping Policy"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/return-policy",
+      "anchorText": "Return Policy"
+    },
+    {
+      "url": "https://www.vitaminworld.com/blogs/blog",
+      "anchorText": "Blog"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/contact-us",
+      "anchorText": "Contact Us"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/store-locator",
+      "anchorText": "Store Locator"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/coupons-promotions",
+      "anchorText": "Coupons & Promotions"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/accessibility-statement",
+      "anchorText": "Accessibility Statement"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/privacy-statement",
+      "anchorText": "Privacy Statement"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/sitemap",
+      "anchorText": "Sitemap"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/multivitamins",
+      "anchorText": "Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamins-supplements",
+      "anchorText": "Vitamins & Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/protein-fitness",
+      "anchorText": "Protein & Fitness"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/probiotics-digestion",
+      "anchorText": "Probiotics & Digestion"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-weight",
+      "anchorText": "Healthy Weight"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-holistic-health",
+      "anchorText": "Herbs & Holistic Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/beauty-personal-care",
+      "anchorText": "Beauty & Personal Care"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/food-drink",
+      "anchorText": "Food & Drink"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-all",
+      "anchorText": "Shop All"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/deals",
+      "anchorText": "Deals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/best-sellers",
+      "anchorText": "Best Sellers"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/multivitamins",
+      "anchorText": "Multivitamins"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamins-supplements",
+      "anchorText": "Vitamins & Supplements"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/protein-fitness",
+      "anchorText": "Protein & Fitness"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/probiotics-digestion",
+      "anchorText": "Probiotics & Digestion"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/healthy-weight",
+      "anchorText": "Healthy Weight"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/herbs-holistic-health",
+      "anchorText": "Herbs & Holistic Health"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/beauty-personal-care",
+      "anchorText": "Beauty & Personal Care"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/food-drink",
+      "anchorText": "Food & Drink"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/shop-all",
+      "anchorText": "Shop All"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/deals",
+      "anchorText": "Deals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/best-sellers",
+      "anchorText": "Best Sellers"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world®",
+      "anchorText": "Vitamin World®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/precision-engineered",
+      "anchorText": "Precision Engineered®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/force-factor",
+      "anchorText": "Force Factor"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/performix",
+      "anchorText": "Performix®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/now-foods",
+      "anchorText": "Now Foods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garden-of-life",
+      "anchorText": "Garden Of Life"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/irwin-naturals",
+      "anchorText": "Irwin Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/solgar",
+      "anchorText": "Solgar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/olly",
+      "anchorText": "Olly"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gaia-herbs",
+      "anchorText": "Gaia Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/brands",
+      "anchorText": "Brands"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/vitamin-world®",
+      "anchorText": "Vitamin World®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/precision-engineered",
+      "anchorText": "Precision Engineered®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/force-factor",
+      "anchorText": "Force Factor"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/performix",
+      "anchorText": "Performix®"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/now-foods",
+      "anchorText": "Now Foods"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/garden-of-life",
+      "anchorText": "Garden Of Life"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/irwin-naturals",
+      "anchorText": "Irwin Naturals"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/solgar",
+      "anchorText": "Solgar"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/olly",
+      "anchorText": "Olly"
+    },
+    {
+      "url": "https://www.vitaminworld.com/collections/gaia-herbs",
+      "anchorText": "Gaia Herbs"
+    },
+    {
+      "url": "https://www.vitaminworld.com/pages/brands",
+      "anchorText": "Brands"
+    },
+    {
+      "url": "https://www.vitaminworld.com/cart",
+      "anchorText": "View Cart"
+    },
+    {
+      "url": "https://www.vitaminworld.com/cart",
+      "anchorText": "View Cart"
+    }
+  ]
+}
